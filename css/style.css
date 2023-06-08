@@ -1,0 +1,36 @@
+/* Descripcion: Archivo Style CSS */
+
+/**********************************
+Tabla de contenidos:
+1. Fuente
+2. Variables
+3. Estilos generales
+***********************************/
+
+/**********************/
+/*****   Fuente   *****/
+/**********************/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/*************************/
+/*****   Variables   *****/
+/*************************/
+* {
+    --very-dark-gb: hsl(217, 19%, 35%);
+    --dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-gb: hsl(210, 46%, 95%);
+}
+
+/**********************************/
+/******   Estilos Generales   *****/
+/**********************************/
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
