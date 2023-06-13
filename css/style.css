@@ -27,10 +27,76 @@ Tabla de contenidos:
 /**********************************/
 body {
     font-family: 'Manrope', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-size: 13px;
+    color: var(--very-dark-gb);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card__bg,
+.card__bg--image {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card__bg--image {
+    width: 100%;
+}
+
+.card__content {
+    padding: 20px 30px;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--dark-blue);
+}
+
+.card__author, .author__info {
+    display: flex;
+}
+
+.card__author {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author__info {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.icon {
+    background-color: var(--light-gb);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.author__info--name {
+    line-height: 10px;
+    padding: 0 20px 10px;
+}
+
+.author__info--name span {
+    color: var(--grayish-blue);
 }
